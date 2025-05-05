@@ -9,24 +9,29 @@
     <title>DVD</title>
 </head>
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+    }
     #dvd {
-        position: fixed;
+        position: absolute;
         background-color: rgba(255, 0, 0, 0);
         height: 300px;
         width: 300px;
         border-radius: 100px;
         top: 250px;
         left: 400px;
-    }
-    
-    #dvd {
         fill: white;
     }
 </style>
 
 
-<body onload="moov()" style="background-color: rgb(0, 0, 0);">
-    <div id="Objdvd">
+<body onload="moov()">
+    <div id="objDvd">
         <?xml version="1.0" encoding="utf-8"?>
             <svg xmlns="http://www.w3.org/2000/svg" id="dvd" width="100%" height="100%" viewBox="0 0 210 107">
                 <title>DVD logo</title>
